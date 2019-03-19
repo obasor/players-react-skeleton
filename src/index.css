@@ -4,5 +4,90 @@
 */
 
 body {
-  margin: 1em;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+label {
+  width: 100%;
+}
+
+#main {
+  height: 100vh; /* vh stands for view-port height, 1vh is 1% of screen height */
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.home {
+  text-align: center;
+}
+
+.lef {
+  height: 100vh;
+  background-color: #F1F1F1;
+}
+
+.rig {
+  height: 100vh;
+  background-color: #F1F1F1;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+  height: 450px;
+}
+
+/* Set gray background color and 100% height */
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #F1F1F1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+
+footer {
+  color: white;
+  padding: 15px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: whitesmoke;
+}
+
+@media ( max-width: 991px ) {
+
+  .navbar:not( .top-nav-collapse ) {
+    background: #563E91;
+  }
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and ( max-width: 767px ) {
+
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+
+  .row.content {
+    height: auto;
+  }
+}
+
+.rgba-gradient {
+  background: -moz-linear-gradient(45deg, rgba(208, 228, 247, 0.6), rgba(115, 177, 231, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(208, 228, 247, 0.6), rgba(115, 177, 231, 1) 100%);
+  background: linear-gradient(45deg, rgba(208, 228 247, 0.6), rgba(115, 177, 231, 1) 100%);
 }
